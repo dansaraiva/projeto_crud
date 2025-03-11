@@ -9,7 +9,7 @@ import br.com.anm.produtos.crud_produtos.servico.ProdutoServico;
 
 @RestController
 public class ProdutoControle {
-
+    //Injeção de dependências
     @Autowired
     private ProdutoServico ps;
 
