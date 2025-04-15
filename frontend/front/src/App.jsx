@@ -1,15 +1,18 @@
+
+import { useState } from 'react';
 import './App.css';
 import Formulario from './Formulario';
 import Tabela from './Tabela';
 
 function App() {
 
-  return (    
-      <div className="App">
-        <Formulario/>
+const[btnCadastrar] =useState(false);
+
+return (    
+      <div>
+        <Formulario botao={btnCadastrar}/>
         <Tabela/>
       </div>
-      
   )
 }
 
