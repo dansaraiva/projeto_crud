@@ -36,3 +36,9 @@ build/
 application.properties
 src/main/resources/application.properties
 **/application.properties
+
+# Ignorar arquivos de configuração sensíveis
+backend/src/main/resources/application.properties
+
+# Ignorar arquivos gerados pelo build
+backend/target/
