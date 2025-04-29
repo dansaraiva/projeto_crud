@@ -19,10 +19,9 @@ const[produtos, setProdutos] =useState([]);
 
 
 return (    
-      <div>
-        <p>{JSON.stringify(produtos)}</p>
+      <div>        
         <Formulario botao={btnCadastrar}/>
-        <Tabela/>
+        <Tabela vetor={produtos}/>
       </div>
   )
 }
