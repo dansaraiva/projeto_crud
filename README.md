@@ -95,6 +95,30 @@ O projeto consiste em um backend em Java com Spring Boot e um frontend em React,
 
 O arquivo de configuração do backend é `backend/crud_produtos/src/main/resources/application.properties`. Você pode configurar a porta do servidor, as configurações do banco de dados e outras propriedades do Spring Boot neste arquivo.
 
+## Configuração do `application.properties`
+
+O arquivo `application.properties` é responsável pelas configurações do backend Spring Boot.
+
+Abaixo está um exemplo básico para rodar o projeto localmente com banco de dados H2 em memória:
+
+```properties
+# Porta do servidor
+server.port=8080
+
+# Configuração do banco de dados H2 (em memória)
+spring.datasource.url=jdbc:h2:mem:produtosdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+
+# Configurações do JPA/Hibernate
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Habilita o console web do H2
+spring.h2.console.enabled=true
+
 ### Frontend
 
 O frontend se conecta ao backend na porta 8080 por padrão. Se você precisar alterar a URL do backend, modifique o arquivo `frontend/front/src/Formulario.jsx` e `frontend/front/src/Tabela.jsx`.
