@@ -1,1 +1,26 @@
-.vscode
+# VS Code
+.vscode/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Node.js (frontend)
+frontend/front/node_modules/
+frontend/front/dist/
+frontend/front/.env
+
+# Maven/Java (backend)
+backend/target/
+backend/.classpath
+backend/.project
+backend/.settings/
+*.class
+
+# Arquivos de ambiente e configuração sensíveis
+.env
+backend/src/main/resources/application.properties
+backend/src/main/resources/application.yml
