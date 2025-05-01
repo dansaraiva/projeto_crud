@@ -12,7 +12,12 @@
 	<artifactId>crud_produtos</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>crud_produtos</name>
-	<description>Demo project for Spring Boot</description>
+	<description>
+		Aplicação fullstack para cadastro, consulta, atualização e remoção de produtos. 
+		O backend é desenvolvido em Java com Spring Boot, fornecendo uma API REST, 
+		enquanto o frontend utiliza React para uma interface web moderna e responsiva. 
+		Ideal para estudos e demonstração de integração entre frontend e backend.
+	</description>
 	<url/>
 	<licenses>
 		<license/>
