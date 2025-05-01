@@ -118,6 +118,7 @@ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 
 # Habilita o console web do H2
 spring.h2.console.enabled=true
+```
 
 ### Frontend
 
