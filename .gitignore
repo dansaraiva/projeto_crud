@@ -1,5 +1,6 @@
 # VS Code
 .vscode/
+frontend/.vscode/
 
 # Sistema operacional
 .DS_Store
