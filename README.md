@@ -60,8 +60,16 @@ O projeto consiste em um backend em Java com Spring Boot e um frontend em React,
 ### Frontend
 
 Navegue até a pasta `frontend/front/`
-Execute npm install
-Execute npm run dev
+Execute 
+```bash
+npm install
+```
+
+Em seguida execute 
+```bash
+npm run dev
+```
+
 Acesse a aplicação em `http://localhost:5173`
 
 ## Configuração
@@ -70,7 +78,7 @@ Acesse a aplicação em `http://localhost:5173`
 
 O arquivo de configuração do backend é `backend/crud_produtos/src/main/resources/application.properties`. Você pode configurar a porta do servidor, as configurações do banco de dados e outras propriedades do Spring Boot neste arquivo.
 
-## Configuração do `application.properties`
+### Configuração do `application.properties`
 
 O arquivo `application.properties` é responsável pelas configurações do backend Spring Boot.
 
@@ -94,7 +102,7 @@ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 # Habilita o console web do H2
 spring.h2.console.enabled=true
 ```
-## Configuração do Banco de Dados
+### Configuração do Banco de Dados
 
 O projeto utiliza o banco de dados H2 (em memória) para desenvolvimento e testes.
 
