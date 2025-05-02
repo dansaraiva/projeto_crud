@@ -1,0 +1,10 @@
+INSERT INTO produtos (nome, marca) VALUES ('Notebook Inspiron', 'Dell');
+INSERT INTO produtos (nome, marca) VALUES ('Galaxy S23', 'Samsung');
+INSERT INTO produtos (nome, marca) VALUES ('iPhone 15', 'Apple');
+INSERT INTO produtos (nome, marca) VALUES ('PlayStation 5', 'Sony');
+INSERT INTO produtos (nome, marca) VALUES ('Xbox Series X', 'Microsoft');
+INSERT INTO produtos (nome, marca) VALUES ('Smart TV 55"', 'LG');
+INSERT INTO produtos (nome, marca) VALUES ('ThinkPad X1', 'Lenovo');
+INSERT INTO produtos (nome, marca) VALUES ('Headphone QC45', 'Bose');
+INSERT INTO produtos (nome, marca) VALUES ('Teclado G Pro', 'Logitech');
+INSERT INTO produtos (nome, marca) VALUES ('Mouse DeathAdder', 'Razer');
