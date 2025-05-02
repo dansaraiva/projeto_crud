@@ -23,6 +23,8 @@ O projeto consiste em um backend em Java com Spring Boot e um frontend em React,
     *   React
     *   JavaScript
     *   Vite
+*   **Banco de dados:**
+    *   H2 Database
 
 ## Como Executar o Projeto
 
@@ -57,37 +59,10 @@ O projeto consiste em um backend em Java com Spring Boot e um frontend em React,
 
 ### Frontend
 
-1.  Navegue até o diretório `frontend/front`:
-
-    ```bash
-    cd frontend/front
-    ```
-
-2.  Instale as dependências:
-
-    ```bash
-    npm install
-    ```
-
-    Ou, se usar yarn:
-
-    ```bash
-    yarn install
-    ```
-
-3.  Execute o aplicativo React:
-
-    ```bash
-    npm run dev
-    ```
-
-    Ou, se usar yarn:
-
-    ```bash
-    yarn dev
-    ```
-
-    O frontend estará disponível em `http://localhost:5173`.
+Navegue até a pasta `frontend/front/`
+Execute npm install
+Execute npm run dev
+Acesse a aplicação em `http://localhost:5173`
 
 ## Configuração
 
@@ -118,6 +93,28 @@ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 
 # Habilita o console web do H2
 spring.h2.console.enabled=true
+```
+## Configuração do Banco de Dados
+
+O projeto utiliza o banco de dados H2 (em memória) para desenvolvimento e testes.
+
+### Seed da Base de Dados
+
+Para inicializar o banco de dados com dados de exemplo, o projeto inclui um arquivo `data.sql` localizado em `backend/src/main/resources/`. Este arquivo é executado automaticamente quando a aplicação é iniciada.
+
+#### Como funciona:
+
+1. O Spring Boot detecta o arquivo `data.sql` no diretório de recursos
+2. Após criar as tabelas, o Spring Boot executa os comandos SQL neste arquivo
+3. Os produtos de exemplo são inseridos na tabela `produtos`
+
+#### Como personalizar:
+
+Para adicionar ou modificar os dados iniciais, edite o arquivo `data.sql`. Exemplo:
+
+```sql
+INSERT INTO produtos (nome, marca) VALUES ('Notebook Inspiron', 'Dell');
+INSERT INTO produtos (nome, marca) VALUES ('Galaxy S23', 'Samsung');
 ```
 
 ### Frontend
